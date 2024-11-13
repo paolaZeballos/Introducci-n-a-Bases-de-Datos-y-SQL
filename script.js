@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Handle browser back/forward navigation
   window.addEventListener('popstate', () => {
-    const moduleId = location.hash.substring(1) || 'intro'
+    const moduleId = location.hash.substring(1) || 'presentacion'
     showModule(moduleId)
   })
 
   // Show the correct module on page load
-  const initialModuleId = location.hash.substring(1) || 'intro'
+  const initialModuleId = location.hash.substring(1) || 'presentacion'
   showModule(initialModuleId)
 })
