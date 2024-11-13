@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paola-TesterQA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="menu">
+      <h2>Introducción a Bases de Datos y SQL</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="#presentacion" class="module-link active"
+              >Presentación</a
+            >
+          </li>
+          <li>
+            <a href="#modulo1" class="module-link active"
+              >Ejercicios Módulo 1</a
+            >
+          </li>
+          <li><a href="#modulo2" class="module-link">Ejercicios Módulo 2</a></li>
+          <li><a href="#modulo3" class="module-link">Ejercicios Módulo 3</a></li>
+          <li>
+            <a href="#modulo4" class="module-link"
+              >Ejercicios Módulo 4</a
+            >
+          </li>
+          <li><a href="#modulo5" class="module-link">Ejercicios Módulo 5</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main id="content">
+      <div id="presentacion" class="module-content">
+        <h1 class="module-title">Presentación</h1>
+       <p>
+        Hola soy Paola una docente, en proceso de reinvención profesional, como Tester Manual QA, quien te invita a explorar conocimientos utiles para testing mediante el manejo de Bases de datos con SQL.
+       </p> 
+        <a target="_blank" href="https://www.educacionit.com/perfil/paola-natali-zeballos-985869/certificado/71496?_gl=1*kvqnmn*_ga*NzY2NzQyMjg2LjE3MjEwNDk5NzI.*_ga_R8GR8LL2B8*MTczMTI0ODUwNC4xNjUuMS4xNzMxMjQ5MDc0LjUzLjAuMzAxODU1MTM5">
+        <img
+          class="module-image"
+          src="img/Certificado-Introducción-a-Bases-de-Datos-y-SQL-EducaciónIT.jpeg"
+          alt="certificado de finalización"
+          width="500"
+        /></a>
+        <p class="module-description"> 
+          En este curso hice la construcción e importación de modelos de bases de datos, con el fin de aprender a interartuar con ellas,
+          mediante la instalación y utilización de MySQL, con el lenguaje SQL, para realizar
+          diferentes estructuras de consulta, con operadores, cláusulas y sentencias.
+        </p>
+          <img src="/img/show datebase.png"  width="600" alt="captura de pantalla de bases de datos con las que trabaje" srcset="">
+        <p>
+           En los siguientes modulos encontraras ejercicios realizados por mi Paola, para manipular datos, registrarlos y agruparlos.
+           que me permitieron practicar y consolidar los conocimientos
+           adquiridos en complemento a lo realizados en clases.
+           <ul>
+            <li>
+              Módulo 1: Ejercicios para crear Base de Datos, Tabla, Campos y Registros
+            </li>
+            <li> 
+              Módulo 2: Ejercicios de Consultas Básicas en Lenguaje SQL.
+            </li>
+            <li>
+              Módulo 3: Funciones integradas, funciones de agregado y agrupamientos.
+            </li>
+            <li>             
+              Módulo 4: DDL Create, DML Update, Insert y Delete.
+            </li>
+            <li>
+              Módulo 5: Subconsultas, condicionales y joins.
+            </li>
+           </ul>
+        </p>
+      </div>
+      <div id="modulo1" class="module-content">
+        <h1 class="module-title">Crear Base de Datos, Tabla, Campos y Registros</h1>
+        <p class="module-description">
+
+          Bueno empecemos, aca puedes ver una forma de como crear una base de datos a la que yo le  puse el nombre
+          BONUS_TRACK.
+        
+    Luego dentro de esta base de datos cree una tabla con el nombre “AGENDA”
+          , con la estructura que se muestra en la imagen. Siendo los campos ID, Nombre,
+          Apellido, Domicilio y Teléfono.( con su tipo de dato correspondiente varchar, integer, NOT NULL
+ y Primary Key)
+          
+          despues agregue a la tabla, el campo MAIL con las especifiacciones de
+          que contenga como máximo 50
+          caracteres y su carga es obligatoria. Finalmente
+           inserte registros en la tabla “AGENDA” con mis datos.       
+        </p>
+        <img
+          class="module-image"
+          src="img/m1/create-datebase.png"
+          alt="Diagrama conceptual de Next.js"
+        />
+        <img
+          class="module-image"
+          src="img/m1/create-table (2).png"
+          alt="Diagrama conceptual de Next.js"
+        />
+        <img
+          class="module-image"
+          src="img/m1/agreg-campo.png"
+          alt="Diagrama conceptual de Next.js"
+        />
+        <img
+          class="module-image"
+          src="img/m1/agra-registros.png"
+          alt="Diagrama conceptual de Next.js"
+        />
+       
+      </div>
+      <div id="modulo2" class="module-content" style="display: none">
+        <h1 class="module-title">Consultas en Lenguaje SQL</h1>
+        <p class="module-description">
+          Aqui realice la importacion de un archivo CSV, llamado TOP_SPOTIFY, a la base de datos con el nombre BONUS_TRACK.
+ para obtener los registros d euna tabla, donde puedo mostrar todo el contenido de la tabla TOP_SPOTIFY mediante la query  "select * from", previamente de haberle indicado que use la Base de Datos que guarda el archivo.
+        </p>
+        <img
+          class="module-image"
+          src="img/m2/tabla_spoty.png"
+          alt="captura de imagen query tabla_spoty"
+        />
+        <p class="module-description">
+          Aca les muestro como hacer una consulta que muestre solo algunos campos. En este ejemplo solo en el resultado de la query, se van observan tres columnas ARTISTA, TÍTULO y GÉNERO de la tabla TOP_SPOTIFY.
+   ocultandose las otras dos columnas de la tabla que son AÑO y ID como vimos en el ejercicion anterior donde visualizamos todo el contenido de la tabla.
+          
+        </p>
+        <img
+        class="module-image"
+        src="img/m2/consulta_algunos_columnas.png"
+        alt="captura de imagen query solo consulta_algunos_columnas"
+      />
+      <p class="module-description">
+      Tambien se pueden usar cláusuras como "Order By" para ordenar alfabéticamente el resultado de la consulta, según algún campo/columna. Yo en este caso lo ordene por la columna de los géneros musicales. 
+y  para el caso de aquellos géneros que se repiten, le indique que los subordene de nuevo alfabéticamente, según los nombres de la columna de los artistas.
+       
+      </p>
+      <img
+      class="module-image"
+      src="img/m2/order_by.png"
+      alt="captura de imagen query solo consulta_algunos_columnas"
+    />
+    <p class="module-description">
+      Se pueden hacer consultas que solo muestren un limite de resultados usando la sentencia "limit". En este ejemplo se observan los 10 priemros registros de la tabla.
+      </p>
+      <img
+      class="module-image"
+      src="img/m2/limit.png"
+      alt="captura de imagen query muestra solo 10 resultados"
+    />
+    <p class="module-description">
+      Si quisieramos obtener una lista de un campo en este caso serian, todas las canciones pertenecientes a la columna género Pop, pero que fueran solo las lanzadas durante el año( otro campo de la tabla) 2011. y agregar un filtro para mostrar todos los campos de la tabla en el resultado de la consulta, ordenando ademas dicho resultado alfabéticamente según otros campos como por ejemplo, los nombres de los artistas y los nombres de las canciones.
+      se veria asi... </p>
+      <img
+      class="module-image"
+      src="img/m2/where.png"
+      alt="captura de imagen query muestra solo 10 resultados"
+    />
+
+
+
+
+      </div>
+      <div id="modulo3" class="module-content" style="display: none">
+        <h1 class="module-title">API Routes</h1>
+        <img
+          class="module-image"
+          src="/placeholder.svg?height=300&width=500"
+          alt="Ejemplo de API Route en Next.js"
+        />
+        <p class="module-description">
+          Las API Routes de Next.js permiten crear endpoints de API directamente
+          en tu aplicación Next.js. Aprenderemos cómo crear, configurar y
+          utilizar estas rutas para manejar solicitudes y respuestas del
+          servidor.
+        </p>
+      </div>
+      <div id="modulo4" class="module-content" style="display: none">
+        <h1 class="module-title">Optimización de Imágenes</h1>
+        <img
+          class="module-image"
+          src="/placeholder.svg?height=300&width=500"
+          alt="Comparación de imágenes optimizadas y no optimizadas"
+        />
+        <p class="module-description">
+          Next.js ofrece optimización automática de imágenes. En este módulo,
+          veremos cómo utilizar el componente Image de Next.js para cargar
+          imágenes de manera eficiente, mejorando el rendimiento y la
+          experiencia del usuario.
+        </p>
+      </div>
+      <div id="modulo5" class="module-content" style="display: none">
+        <h1 class="module-title">Server-Side Rendering</h1>
+        <img
+          class="module-image"
+          src="/placeholder.svg?height=300&width=500"
+          alt="Diagrama de Server-Side Rendering"
+        />
+        <p class="module-description">
+          El Server-Side Rendering (SSR) es una característica poderosa de
+          Next.js. Exploraremos cómo implementar SSR en nuestras aplicaciones,
+          sus beneficios en términos de SEO y rendimiento, y cuándo es más
+          apropiado utilizarlo.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
