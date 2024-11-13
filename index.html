@@ -50,12 +50,12 @@
           En este curso hice la construcción e importación de modelos de bases de datos, con el fin de aprender a interartuar con ellas,
           mediante la instalación y utilización de MySQL, con el lenguaje SQL, para realizar
           diferentes estructuras de consulta, con operadores, cláusulas y sentencias.
+          Aqui debajo te muestro todas las Bases de Datos que use para Practicar.
         </p>
-          <img src="/img/show datebase.png"  width="600" alt="captura de pantalla de bases de datos con las que trabaje" srcset="">
+          <img src="img/show datebase.png"  width="600" alt="captura de pantalla de bases de datos con las que trabaje" srcset="">
         <p>
-           En los siguientes modulos encontraras ejercicios realizados por mi Paola, para manipular datos, registrarlos y agruparlos.
-           que me permitieron practicar y consolidar los conocimientos
-           adquiridos en complemento a lo realizados en clases.
+           En los siguientes módulos encontraras una selección de ejercicios realizados por mi, durante el aprendizaje para poder manipular datos, registrarlos y agruparlos. Esta practica me sirvio para
+           consolidar y complementar los conocimientos adquiridos en las clases.
            <ul>
             <li>
               Módulo 1: Ejercicios para crear Base de Datos, Tabla, Campos y Registros
@@ -64,7 +64,7 @@
               Módulo 2: Ejercicios de Consultas Básicas en Lenguaje SQL.
             </li>
             <li>
-              Módulo 3: Funciones integradas, funciones de agregado y agrupamientos.
+              Módulo 3:Ejercicios de Funciones integradas, de agregado y agrupamientos.
             </li>
             <li>             
               Módulo 4: DDL Create, DML Update, Insert y Delete.
@@ -80,37 +80,40 @@
         <p class="module-description">
 
           Bueno empecemos, aca puedes ver una forma de como crear una base de datos a la que yo le  puse el nombre
-          BONUS_TRACK.
-        
-    Luego dentro de esta base de datos cree una tabla con el nombre “AGENDA”
+          BONUS_TRACK. </p>
+        <p>
+    Luego dentro de esta base de datos, cree una tabla con el nombre “AGENDA”
           , con la estructura que se muestra en la imagen. Siendo los campos ID, Nombre,
           Apellido, Domicilio y Teléfono.( con su tipo de dato correspondiente varchar, integer, NOT NULL
- y Primary Key)
+ y Primary Key). Esto corresponde  a la segunda imagen.</p> 
+ <p>
           
-          despues agregue a la tabla, el campo MAIL con las especifiacciones de
+          Despues agregue a la tabla, el campo MAIL con las especifiacciones de
           que contenga como máximo 50
-          caracteres y su carga es obligatoria. Finalmente
+          caracteres y su carga es obligatoria. Y finalmente
            inserte registros en la tabla “AGENDA” con mis datos.       
         </p>
         <img
           class="module-image"
           src="img/m1/create-datebase.png"
-          alt="Diagrama conceptual de Next.js"
+          alt="imagen create-datebase"
         />
         <img
           class="module-image"
           src="img/m1/create-table (2).png"
-          alt="Diagrama conceptual de Next.js"
+          alt="imagen create-table"
         />
+        <br>
         <img
           class="module-image"
           src="img/m1/agreg-campo.png"
-          alt="Diagrama conceptual de Next.js"
+          alt="imagen agreg-campo"
         />
+        <br>
         <img
           class="module-image"
           src="img/m1/agra-registros.png"
-          alt="Diagrama conceptual de Next.js"
+          alt="imagen agra-registros"
         />
        
       </div>
@@ -126,7 +129,7 @@
           alt="captura de imagen query tabla_spoty"
         />
         <p class="module-description">
-          Aca les muestro como hacer una consulta que muestre solo algunos campos. En este ejemplo solo en el resultado de la query, se van observan tres columnas ARTISTA, TÍTULO y GÉNERO de la tabla TOP_SPOTIFY.
+          Aca les muestro como hacer una consulta donde solo se visualizan algunos campos. En este ejemplo solo en el resultado de la query, se van observan tres columnas ARTISTA, TÍTULO y GÉNERO de la tabla TOP_SPOTIFY.
    ocultandose las otras dos columnas de la tabla que son AÑO y ID como vimos en el ejercicion anterior donde visualizamos todo el contenido de la tabla.
           
         </p>
@@ -154,7 +157,7 @@ y  para el caso de aquellos géneros que se repiten, le indique que los suborden
       alt="captura de imagen query muestra solo 10 resultados"
     />
     <p class="module-description">
-      Si quisieramos obtener una lista de un campo en este caso serian, todas las canciones pertenecientes a la columna género Pop, pero que fueran solo las lanzadas durante el año( otro campo de la tabla) 2011. y agregar un filtro para mostrar todos los campos de la tabla en el resultado de la consulta, ordenando ademas dicho resultado alfabéticamente según otros campos como por ejemplo, los nombres de los artistas y los nombres de las canciones.
+      Si quisieramos obtener una lista de un campo, que en este caso que les presento serian todas las canciones pertenecientes a la columna género Pop, pero que fueran solo las lanzadas durante el año( otro campo de la tabla) 2011. Y agregar un filtro para mostrar todos los campos de la tabla en el resultado de la consulta, ordenando ademas dicho resultado alfabéticamente según otros campos como por ejemplo, los nombres de los artistas y los nombres de las canciones.
       se veria asi... </p>
       <img
       class="module-image"
@@ -167,18 +170,250 @@ y  para el caso de aquellos géneros que se repiten, le indique que los suborden
 
       </div>
       <div id="modulo3" class="module-content" style="display: none">
-        <h1 class="module-title">API Routes</h1>
-        <img
-          class="module-image"
-          src="/placeholder.svg?height=300&width=500"
-          alt="Ejemplo de API Route en Next.js"
-        />
+        <h1 class="module-title">Funciones integradas, de agregado y agrupamientos</h1>
+        
         <p class="module-description">
-          Las API Routes de Next.js permiten crear endpoints de API directamente
-          en tu aplicación Next.js. Aprenderemos cómo crear, configurar y
-          utilizar estas rutas para manejar solicitudes y respuestas del
-          servidor.
+          Las funciones en MySQL tienen como finalidad simplificar
+la presentación y la obtención de los resultados
+de las consultas. En este modulo observaremos distintos ejemplos que hice de funciones, empezando por las integradas de texto, en esta imagen de la función "CONCAT()"
+que permite concatenar (unificar) cadenas
+de caracteres (valores de campo) en una sola columna.
         </p>
+        <img
+        class="module-image"
+        src="img/m3/concat.png"
+        alt="Ejemplo de CONCAT"
+      />
+      <p class="module-description">
+        En este ejemplo  se concatena (unifica) en una única columna,
+el campo NOMBRECOMPANIA, junto con los
+valores del campo PAIS de
+la tabla clientes_neptuno, sin dejar espacio entre los mismos.
+
+        
+      </p>
+      <p class="module-description">
+        Otra Función es UPPER() para convertir a mayúsculas el valor de un campo.
+Miremos el siguiente ejemplo, que convierte a mayúsculas los valores
+contenidos en el campo "EMPRESA" de la tabla clientes.
+
+ 
+      </p>
+      
+      <img
+      class="module-image"
+      src="img/m3/upper.png"
+      alt="Ejemplo upper"
+    />
+
+    <p class="module-description">
+       CHAR_LENGTH() Es una función integrada de texto que permite contabilizar la cantidad de
+caracteres que contiene una cadena, e incluye los
+espacios en blanco. En el ejercico de abajo la use para contabilizar la cantidad de caracteres contenidos
+en los valores del campo direccion de la tabla clientes
+y muestra el resultado en una nueva columna llamada
+cantidad de caracteres.
+
+    </p>
+    
+    <img
+    class="module-image"
+    src="img/m3/CHAR_LENGTH.png"
+    alt="Ejemplo CHAR_LENGTH"
+  />
+  <p class="module-description">
+    A continuación, veremos ejercicios con distintas funciones integradas
+de fecha, que ofrece MySQL.
+
+ </p>
+ 
+ <img
+ class="module-image"
+ src="img/m3/year.png"
+ alt="Ejemplo year"
+/>
+<p>
+  Esta función YEAR permite obtener el año de un campo de tipo
+fecha. En el ejemplo anterior, vemos como pude obterner el
+año del campo fecha, de la tabla facturas y asigna a través
+del alias "AS" Año, este nombre a la columna resultante.
+
+</p>
+<img
+ class="module-image"
+ src="img/m3/curdate.png"
+ alt="Ejemplo curdate"
+/>
+<p>
+  Esta imagen anterior, devuelve la fecha actual
+del sistema operativo que estaba usando, en una columna con el nombre
+FECHA ACTUAL. Para esto use la Función CURDATE.
+  
+
+</p>
+
+
+<p>
+  La Función TIMESTAMPDIFF permite calcular la cantidad de meses o
+años transcurridos entre 2 fechas.
+El ejemplo que les voy a mostrar a continuación, calcula la cantidad de
+meses transcurridos entre el 01/01/2020 y el 30/06/2024 y
+devuelve el resultado en una columna, con el nombre
+MESES TRANSCURRIDOS siendo un total de 53. 
+
+</p>
+<img
+ class="module-image"
+ src="img/m3/Función TIMESTAMPDIFF.png"
+ alt="Ejemplo TIMESTAMPDIFF"
+/>
+
+<p>
+  También existen funciones integradas 
+  matemáticas en MySQL.Yo use la Función ROUND
+  en este ejercicio para redondear valores
+  numéricos. El ejemplo a la derecha, divide los
+  valores numéricos cargados en el campo precio
+  de la tabla articulos por 3 y redondea el
+  resultado de dicha división a 2 decimales.
+  El segundo argumento debe ser siempre un
+  número entero que indique la cantidad de
+  decimales a obtener. Observen la imagen a continuación...
+  
+
+</p>
+<img
+ class="module-image"
+ src="img/m3/round.png"
+ alt="Ejemplo ROUND"
+/>
+
+<p>
+Función CEIL, devuelve el valor entero mayor al argumento
+especificado.
+En el ejemplo siguiente, yo la use para multiplicar el valor del campo "precio" por
+1.27 (que seria el precio actualizado, suponiendo que necesitamos hacer esta operación) y obtiener el valor entero mayor, en otra columna con
+el nombre Precio redondeado.
+
+</p>
+<img
+ class="module-image"
+ src="img/m3/ceil.png"
+ alt="Ejemplo CEIL"
+/>
+
+
+  <p>
+    Ahora les mostrate mas funciones de SQL, estas nos permiten contar registros,
+    calcular sumas, promedios, obtener valores máximos y
+    mínimos.
+    Por lo que se denominan funciones de agrupamiento
+   debido a que con ellas podemos hacer operaciones sobre conjuntos de registros, en lugar de
+    hacerlo sobre datos individuales; Y tienen la característica de
+    agrupar los resultados en un solo registro de salida.
+
+</p>
+<img
+ class="module-image"
+ src="img/m3/count.png"
+ alt="Ejemplo COUNT"
+/>
+<p>
+Función COUNT, esta función retorna la cantidad de valores
+que contiene un campo especificado.
+Por ejemplo, aca la use para saber la cantidad de
+productos que hay en la tabla Productos. Obtendiendo como resultado que hay 40.
+
+</p>
+
+  
+<p>
+  La sentencia del ejemplo anterior, se puede combinar
+  con la cláusula WHERE. Por ej., si se quiere saber cuántos
+  productos contienen la palabra FERRETERIA, en el campo
+  SECCION, de mi tabla Productos. Haria esta query:
+  <img
+class="module-image"
+src="img/m3/count_where.png"
+alt="Ejemplo count_where"
+/>
+  <p>
+    Y aqui les dejo como es una consulta de la tabla productos con todos sus registros.
+  </p>
+
+</p>
+  <img
+   class="module-image"
+   src="img/m3/tabla_productos.png"
+   alt="Ejemplo tabla_productos"
+  />
+  <p>
+    Y otra cláusula es HAVING que permite hacer selecciones (filtrar)
+    en situaciones en las que no es posible usar la cláusula
+    WHERE, dado que se establece un criterio sobre un valor
+    dado por una función de agrupamiento y no por valores
+    de registros. Ejemplo:
+    
+  </p>
+  <img
+   class="module-image"
+   src="img/m3/having.png"
+   alt="Ejemplo having"
+  />
+
+
+  <p>
+    Si se quiere sumar, en mi caso por ejemplo para saber la cantidad del cod_producto de la tabla Productos.Usando esta funcion "SUM" me retorna la suma de los valores que contiene
+el campo especificado. 
+
+  </p>
+
+</p>
+  <img
+   class="module-image"
+   src="img/m3/sum.png"
+   alt="Ejemplo sum"
+  />
+  <p>
+    Función AVG, esta función retorna el valor promedio de los valores del
+campo especificado. Por ejemplo, para calcular el promedio de todos los
+cod_productos contenidos en la tabla Productos, la instrucción
+SQL a ejecutar fue:
+
+</p>
+<img
+class="module-image"
+src="img/m3/avg.png"
+alt="Ejemplo avg"
+/>
+<p>
+  Función MIN es igual a la anterior, pero calcula el valor mínimo de un campo.
+Por ejemplo, para conocer cuál es el menor cod_producto que
+figura en la tabla Productos, la instrucción SQL que ejecute
+fue la siguiente:
+</p>
+<img
+class="module-image"
+src="img/m3/min.png"
+alt="Ejemplo min"
+/>
+ <p> Usando la misma sentencia, pero con la funcion MAX  podemos averiguar el valor máximo de un campo.</p>
+ 
+ <p>
+  Por ultimo en este modulo conoscamos la cláusula GROUP BY, como su traducción lo indica (agrupar
+  por) tiene como propósito agrupar información de acuerdo
+  a un criterio en común.Y por lo general se utiliza con funciones de agrupación
+  o de agregación como las que les vengo mostrando (COUNT, MIN, MAX, AVG, SUM).
+  En el siguiente ejercicio Supuce que necesitaba calcular la cantidad de
+  cod_productos existentes segun la categoría Origen. Esta la fue la query y su resultado:
+  
+ </p>
+ <img
+class="module-image"
+src="img/m3/group_by.png"
+alt="Ejemplo group_by"
+/>
+
       </div>
       <div id="modulo4" class="module-content" style="display: none">
         <h1 class="module-title">Optimización de Imágenes</h1>
