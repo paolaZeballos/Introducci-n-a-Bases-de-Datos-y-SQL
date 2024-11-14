@@ -78,6 +78,9 @@ p {
 .module-description {
   font-size: 1.1rem;
 }
+.link {
+  color: var(--primary);
+}
 .active {
   color: var(--primary);
   font-weight: bold;
