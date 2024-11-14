@@ -416,18 +416,143 @@ alt="Ejemplo group_by"
 
       </div>
       <div id="modulo4" class="module-content" style="display: none">
-        <h1 class="module-title">Optimización de Imágenes</h1>
+        <h1 class="module-title">Consultas DML-Lenguaje de Manipulación de Datos-</h1>
+        
+        <p class="module-description">
+          Puedes crear una nueva tabla a partir de una sentencia DML, como
+SELECT para poder duplicar la estructura completa de
+la misma o sólo parte de ella. Asi se genera una copia de una tabla
+existente, incluyendo todos sus registros: </p>
+<img
+class="module-image"
+src="img/m4/copiatodo.png"
+alt="Ejemplo copia toda una tabla"
+/>
+
+<p>
+El ejemplo a continuación, genera una copia de una tabla
+existente, copiando en esta nueva tabla sólo aquellos
+registros de la tabla original que cumplan con una
+determinada condición:
+
+          
+        </p>
         <img
           class="module-image"
-          src="/placeholder.svg?height=300&width=500"
-          alt="Comparación de imágenes optimizadas y no optimizadas"
+          src="img/m4/copiaparcial.png"
+          alt="copia parcial de una tabla"
+        />
+
+        <p class="module-description">
+          Aqui veremos una consulta MDL muy util para cuando se necesita modificar registros de una tabla utilizando la
+          sentencia UPDATE. Yo use la sintaxis genérica del comando
+          UPDATE; y mediante la cláusula WHERE le estableci una
+          condición; de manera tal que , sólo las filas/registros que
+          cumplarian esa condición fueran actualizadas, entonces solo los registro existente donde el pais era Estado Unidos para cambiarlo por USA, de esta manera: 
+        </p>
+        <img
+          class="module-image"
+          src="img/m4/update.png"
+          alt="captura de imagen ejercicio update"
         />
         <p class="module-description">
-          Next.js ofrece optimización automática de imágenes. En este módulo,
-          veremos cómo utilizar el componente Image de Next.js para cargar
-          imágenes de manera eficiente, mejorando el rendimiento y la
-          experiencia del usuario.
+          Es importante saber que en ocasiones, el motor de base de datos MySQL
+          Workbench bloquea (por defecto) las bases de datos
+          para evitar actualizaciones o eliminaciones involuntarias.
+         
+          
         </p>
+        <img
+          class="module-image"
+          src="img/m4/desbloq.png"
+          alt="captura de imagen desbloqueo"
+        />
+        <p class="module-description">
+            <p class="module-description">
+            INSERT se usa para hacer consultas de datos anexados, (otra forma de manipulacion de datos)
+              De esta forma pude insertar datos (provenientes de otra
+              tabla) en una tabla. Te mostrare una tabla sin productos suspendidos, luego como con INSER los suspendi.
+         
+          
+        </p>
+        <img
+          class="module-image"
+          src="img/m4/Nosuspendidos.png"
+          alt="captura de imagen tabla original con productos no suspendidos"
+        />
+        <p>
+          Genere una nueva tabla con el nombre
+PRODUCTOS_SUSPENDIDOS a partir de la
+tabla PRODUCTOS_NEPTUNO. La nueva tabla
+contiene 8 productos (registros) igual a la primera. Por lo que puse en
+esta nueva tabla todos los campos de la tabla
+PRODUCTOS_NEPTUNO, pero sólo aquellos
+registros en los que en el campo
+SUSPENDIDO figure la palabra SI. Y asi logre mostrar
+de la tabla PRODUCTOS_SUSPENDIDOS el
+contenido como se ve en la ultima imagen. 
+Pero ante debi ejecutra esta sintaxis:
+
+        </p>
+        <img
+          class="module-image"
+          src="img/m4/insert.png"
+          alt="imagen sintaxis insert"
+        />
+        <p>A partir de este momento, todos los productos provistos por el proveedor 1 pasan a estar
+          suspendidos por tiempo indeterminado</p>
+        <img
+          class="module-image"
+          src="img/m4/Suspendidos.png"
+          alt="imagen tabla modificada"
+        />
+<p>
+  Para eliminar registros de una tabla, se utiliza la
+  sentencia DELETE. Al hacerlo, se deberá especificar la condición que deben cumplir los registros
+  de la tabla a eliminar.
+  En el ejemplo que se muestra a la derecha, se
+  eliminarían de la tabla Productos todas aquellas
+  filas/registros donde el campo idProducto
+  contenga el valor 1.
+  
+</p>
+<img
+class="module-image"
+src="img/m4/delete.png"
+alt="imagen delete"
+/> 
+<p>DELETE se puede utilizar para
+  eliminar todos los registros de una tabla,pero no
+  resetea los valores de los campos
+  AUTO_INCREMENT. Para eso se usa TRUNCATE, ¡te lo muestro luego!</p>
+<img
+class="module-image"
+src="img/m4/resultado delete.png"
+alt="imagen despues de delete"
+/> 
+
+<p>
+  Recuerda que si no especificas ninguna condición a
+  través de una cláusula WHERE, se eliminarán todos
+  los registros de la tabla sin ninguna limitación (es
+  decir, la tabla quedará vacía).
+</p>
+
+<img
+class="module-image"
+src="img/m4/truncate.png"
+alt="imagen truncate"
+/> 
+<p>
+  Como ya te adelante si necesitas optar por vaciar
+completamente la tabla, es recomendable utilizar esta
+sentencia TRUNCATE TABLE, ya que elimina
+los registros en su totalidad y deja totalmente vacía la
+tabla, de manera menos costosa (en términos de
+rendimiento) para el servidor de base de datos. Como te muestro en el ejemplo anterior.
+</p>
+
+
       </div>
       <div id="modulo5" class="module-content" style="display: none">
         <h1 class="module-title">Server-Side Rendering</h1>
