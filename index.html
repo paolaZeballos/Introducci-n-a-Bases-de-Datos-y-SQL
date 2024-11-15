@@ -555,23 +555,105 @@ rendimiento) para el servidor de base de datos. Como te muestro en el ejemplo an
       </div>
       <div id="modulo5" class="module-content" style="display: none">
         <h1 class="module-title">Subconsultas, condicionales y joins</h1>
-        <p>
-          Subconsultas, condicionales y joins
+        <p> Para aprender hacer una subconsulta, es decir, un
+          SELECT dentro de otra consulta (otro SELECT).
+          Con el objetivo <del></del> obtener un resultado y utilizarlo
+          como criterio de búsqueda para obtener otro, como por ej. un
+          determinado listado de registros.
+          
+          Yo hice el siguiente ejemplo con una subconsulta para
+          conocer todos los registros de la tabla articulos,
+          cuyo valor de campo articuloID, se encuentra en
+          el campo articuloID de la tabla facturas. Les muestro...
+
+          
+  
         </p>
         <img
           class="module-image"
-          src="img/m5/"
-          alt="imagen"
+          src="img/m5/subconsulta.png"
+          alt="imagen subconsulta"
         />
         <p class="module-description">
-          ...........
+          Tambien aca les comparto otra subconsulta que apendi denominada ESCALAR. Cuando necesitamos
+ejecutar una subconsulta que devuelva un único resultado
+(como puede ser una suma, un promedio, un
+valor máximo, un valor mínimo, etc.). Haremos algo como el
+ejemplo que le dejo aqui debajo, donde defini una consulta que
+devuelva de la tabla alumnos, a todos aquellos
+alumnos cuya edad supera la edad promedio. Suponiendo
+ que no se conoce cuál es la edad promedio
+de todos los alumnos, esta subconsulta calcula
+dicho promedio y la consulta principal toma ese
+resultado como criterio de búsqueda, mostrando
+en pantalla todos los registros de la tabla
+alumnos que cumplan con el criterio establecido.
         </p>
 
         <img
           class="module-image"
-          src="img/m5/"
+          src="img/m5/subconsulta_escalar.png"
+          alt="imagen subconsulta_escalar"
+        />
+        <p>
+          El condicional CASE permite asignar un valor a
+          una columna tomando como referencia otro
+          valor de la tabla.
+          Por cada valor o grupo de valores existe un
+          WHEN y un THEN; si encuentra un valor
+          coincidente en algún WHEN, ejecuta el THEN
+          correspondiente a ese WHEN; caso contrario,
+          se ejecuta el ELSE.
+          Este condicional se debe cerrar con la palabra
+          END para indicar que el CASE ha finalizado.
+          El ejercicio siguiente Utiliza la tabla CLIENTES_NEPTUNO, de la DB Laboratorio, para generar
+          una consulta que muestre los campos
+          IDCLIENTE, NOMBRECOMPANÍA, CIUDAD y PAÍS. Luego, agregar una columna llamada
+          CONTINENTE, en la que se muestren los
+          valores definidos en las condiciones. Como Plus le agregue la clausura ORDER BY para ordenarlos alfabéticamente
+          
+        </p>
+        <img
+          class="module-image"
+          src="img/m5/case.png"
           alt="imagen"
         />
+<p>
+  UNION es una sentencia que se usa para comparar varias consultas, cuando: en cada resultado exista la misma cantidad
+  de campos y los campos a comparar tengan tipos de datos
+  compatibles (no es necesario que tengan el
+  mismo nombre).Aqui les muestro una sintaxis que realice para obtener una lista de todos aquellos
+  productos (a la venta y suspendidos) cuyo
+  precio supere los 80 pesos. La búsqueda se
+  debe llevar a cabo en las tablas
+  PRODUCTOS_NEPTUNO y PRODUCTOS_SUSPENDIDOS (que son iguales, si recuerdan en el modulo de ejercicios 3, las cree a una como copia de la otra).
+  
+</p>
+<img
+          class="module-image"
+          src="img/m5/UNION.png"
+          alt="imagen UNION"
+        />
+<p>
+Anteriormente vimos la comparación de los
+resultados de varias consultas con UNION pero hay que diferenciarlo de  otro tipo de consulta que se puede hacer mediante la combinación
+de datos de varias
+tablas. Y para esta consulta usamos
+el operador JOIN, que establece una relación por
+uno o varios campos de diferentes tablas.
+Por ejemplo para generar un listado en que se muestre el
+campo NOMBRECONTACTO de la tabla
+PROVEEDORES y los campos IDPRODUCTO,
+NOMBREPRODUCTO y PRECIOUNIDAD de
+la tabla PRODUCTOS NEPTUNO la sintaxis seria asi: 
+
+</p>
+<img
+          class="module-image"
+          src="img/m5/join.png"
+          alt="imagen JOIN"
+        />
+
 
 
       </div>
